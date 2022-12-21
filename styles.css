@@ -94,17 +94,29 @@ body {
 }
 
 .image img {
-    max-width:80%;
-    max-height:80%;
+    width:70%;
+    height:70%;
 }
 
 .typing {
     background:  var(--middle);
-    font-size:1.5rem;
+    font-size:1.2rem;
     padding:10px;
     border-radius:5px;
     text-align:center;
     height:10%;
+}
+
+.type-1, .type-2 { 
+    background-color: grey;
+    text-shadow: 2px 2px #00000057;
+    font-weight:bold;
+    color: var(--white);
+    width:fit-content;
+    height:fit-content;
+    padding:5px 10px;
+    border-radius:5px;
+    display:inline-block;
 }
 
 .ability-list {
@@ -116,15 +128,7 @@ body {
 }
 
 .list { 
-    height:60%;
-}
-
-.type-1, .type-2 { /* imitating appearance of type in javascript, this will not be an actual CSS element in finished product */
-    background-color: grey;
-    color: var(--white);
-    width:fit-content;
-    padding:5px 10px;
-    border-radius:5px;
+    height:90px;
 }
 
 .abilities {
@@ -132,7 +136,6 @@ body {
     border: var(--black) 1px solid;
     padding:5px 10px;
     font-size:1.1rem;
-    text-transform:capitalize;
 }
 
 .bst {
@@ -146,6 +149,11 @@ body {
 .bst .progress {
     margin-bottom:5px;
 }
+
+.abilities, .type-1, .type-2, #pkmn-name {
+    text-transform:capitalize;
+}
+
 
 /* Base Stat Total Colors */
 #hp {
@@ -201,9 +209,27 @@ body {
         width: 90vw;
     }
 
-    .abilities, #search-button, #random-button, .type-1, .type-2 {
+    .abilities, #search-button, #random-button {
         font-size:0.9rem;
     }
 
+    .image img {
+        height:auto;
+        width:90%;
+        padding-bottom:20px;
+    }
+
+    .image {
+        height:85%; 
+    }
+
+    .typing {
+        height:15%;
+        padding-top:20px;
+    }
+
+    .type-1, .type-2 {
+        font-size: 1rem;
+    }
 
 }

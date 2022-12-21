@@ -1,7 +1,6 @@
 const abilityOne = $("#ability-1");
 const abilityTwo = $("#ability-2");
 const hiddenAbility = $("#hidden-ability");
-
 export class Abilities {
     constructor(pkmn) {
         this.abilityOne = pkmn.abilities[0];

@@ -42,6 +42,8 @@ async function loadPkmn(query) {
         let types = new Types(pkmn);
 
         abilities.checkAbilities();
+        types.findType();
+        types.colorTypes();
     }
 
     catch(err) {
