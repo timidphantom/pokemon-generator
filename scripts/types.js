@@ -1,9 +1,9 @@
 const mainType = $("#type-1");
 const secondaryType = $("#type-2");
 const image = $("#pkmn-image");
-const name = $("#pkmn-name")
-const error = $("#error")
-const bstName = $("#pokemon-name")
+const name = $("#pkmn-name") 
+const bstName = $("#pokemon-name") // name that shows in the base stat section, i put it in here rather than bst.js because I can easily add it into the same function used to display the name at the top
+const error = $("#error") // used to hide error message when searching for a pokemon after displaying it -- go to error.js for actual error handling
 
 export class Types {
     constructor(pkmn) {
