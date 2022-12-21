@@ -115,6 +115,10 @@ body {
     height:30%;
 }
 
+.list { 
+    height:60%;
+}
+
 .type-1, .type-2 { /* imitating appearance of type in javascript, this will not be an actual CSS element in finished product */
     background-color: grey;
     color: var(--white);
@@ -128,6 +132,7 @@ body {
     border: var(--black) 1px solid;
     padding:5px 10px;
     font-size:1.1rem;
+    text-transform:capitalize;
 }
 
 .bst {
@@ -140,6 +145,37 @@ body {
 
 .bst .progress {
     margin-bottom:5px;
+}
+
+/* Base Stat Total Colors */
+#hp {
+    background: #fa7676;
+    color: var(--black);
+}
+
+#attack { 
+    background: #f3aa88;
+    color: var(--black);
+}
+
+#defense { 
+    background: #ffeea0;
+    color: var(--black);
+}
+
+#spatk {
+    background:#7b7bff;
+    color: var(--black);
+}
+
+#spdef {
+    background:#85c985;
+    color: var(--black);
+}
+
+#speed {
+    background:#f1afba;
+    color: var(--black);
 }
 
 /* Dark mode Switch color */
