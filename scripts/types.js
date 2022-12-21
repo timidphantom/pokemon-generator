@@ -2,6 +2,8 @@ const mainType = $("#type-1");
 const secondaryType = $("#type-2");
 const image = $("#pkmn-image");
 const name = $("#pkmn-name")
+const error = $("#error")
+const bstName = $("#pokemon-name")
 
 export class Types {
     constructor(pkmn) {
@@ -19,11 +21,23 @@ export class Types {
         showName(){ //simple function to display name, additionally removing hyphens from all pokemon names except certain ones
             if (this.name == "porygon-2" || this.name == "ho-oh"  || this.name == "porygon-z" || this.name == "jangmo-o" || this.name == "hakamo-o" || this.name == "kommo-o"){
                 name.text(this.name)
+                name.css({ //capitalize name again if error message was previously shown
+                    'text-transform':'uppercase',
+                })
+                bstName.text(this.name)
             }
             else{
                 this.name = this.name.replace(/-/g, ' ');
                 name.text(this.name)
+                name.css({
+                    'text-transform':'uppercase',
+                })
+                bstName.text(this.name)
             }
+
+            error.css({ //hiding error message if it has already been displayed
+                'display':'none',
+            })
             
         }
     

@@ -59,8 +59,9 @@
 <!-- Search: End -->
 
 <!-- Main Section: Start -->
-<div id="pkmn-name" class="name mb-2 col-12 mx-1">
-   Pokémon Name
+<div class="name mb-2 col-12 mx-1">
+   <span id="pkmn-name">Pokémon Name</span>
+   <span id="error"></span>
 </div>
 
 <div class="main d-flex flex-wrap flex-md-nowrap">
@@ -80,7 +81,7 @@
 
 <div class="bst-abilities col-12 col-md-6"> <!-- Section displays game data on Pkmn -->
     <div class="ability-list mb-2">
-        <h4 class="dark-color mb-0">Abilities</h4>
+        <h4 class="ability-title dark-color mb-0">Abilities</h4>
         <hr class="mt-1 mx-auto">
         <div class="list d-flex align-items-center justify-content-center">
             <div class="d-flex justify-content-center align-items-center flex-wrap gap-2 w-100">
@@ -92,7 +93,7 @@
     </div>
 
     <div class="bst">
-        <h4 class="dark-color mb-0">Base Stat Total</h4>
+        <h4 class="bst-title dark-color mb-0">Base Stat Total</h4>
         <hr class=" mt-1 mx-auto">
         <div class="progress" style="height: 40px;">
             <div id="hp" class="progress-bar" role="HP" style="width: 100%" aria-valuenow="64" aria-valuemin="0" aria-valuemax="255">HP</div>
@@ -112,8 +113,8 @@
         <div class="progress" style="height: 40px;">
             <div id="speed" class="progress-bar" role="Speed" style="width: 100%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="255">Speed</div>
           </div>
-          <h5 class="mt-3"><span id="stat-total"></h5>
-          <h5 class="my-3 pb-3"><span id="pokemon-name">Your Pokémon</span> is a <span id="pokemon-role">..</span>.</h5>
+          <h5 class="mt-3"><span id="stat-total">Base Stat Total:</h5>
+          <h5 id="pokerole" class="my-3 pb-3"><span id="pokemon-name">Your Pokémon</span> is <span id="pokemon-role">...</span></h5>
     </div>
 </div>
 

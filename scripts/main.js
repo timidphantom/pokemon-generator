@@ -2,11 +2,14 @@
 import {BaseStatTotal} from './bst.js';
 import {Abilities} from './abilities.js';
 import {Types} from './types.js';
+import {Error} from './error.js';
 
 // Declaring variables
 const searchBtn = $("#search-button");
 const randomBtn = $("#random-button")
 const searchInput = $("#search-box");
+
+
 
 const pokeApi = "https://pokeapi.co/api/v2/pokemon"; // fetching API
 
@@ -44,13 +47,12 @@ async function loadPkmn(query) {
         abilities.checkAbilities();
         types.findType();
         types.colorTypes();
+        bst.displayBaseStats();
+        bst.pokemonRole();
     }
 
     catch(err) {
-        console.log(err)
-    }
+        let error = new Error();
+        error.handleError();
     
-}
-
-
-
+}}
