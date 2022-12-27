@@ -19,9 +19,12 @@
 }
 
 body {
-    background-color: var(--background);
     color: var(--black);
     font-family:'Poppins',sans-serif
+}
+
+.body-bg {
+    background-color: var(--background);
 }
 
 .light-bg {
@@ -31,7 +34,7 @@ body {
 
 .middle-bg {
     background-color: var(--middle);
-    color:var(--white);
+    color:var(--black);
 }
 
 .dark-bg {
@@ -41,6 +44,7 @@ body {
 
 .white-bg {
     background-color: var(--white);
+    color:var(--black);
 }
 
 .black-bg {
@@ -77,7 +81,6 @@ body {
 }
 
 .name {
-    background:  var(--middle);
     text-align:center;
     border-radius:5px;
     font-weight:bold;
@@ -86,7 +89,6 @@ body {
 }
 
 .image {
-    background:  var(--middle);
     height:90%;
     text-align:center;
     border-radius:5px;
@@ -101,7 +103,6 @@ body {
 }
 
 .typing {
-    background:  var(--middle);
     font-size:1.2rem;
     padding:10px;
     border-radius:5px;
@@ -122,7 +123,6 @@ body {
 }
 
 .ability-list {
-    background:  var(--middle);
     padding:10px;
     border-radius:5px;
     text-align:center;
@@ -141,7 +141,6 @@ body {
 }
 
 .bst {
-    background:  var(--middle);
     padding:10px;
     border-radius:5px;
     text-align:center;
@@ -165,7 +164,6 @@ body {
     text-transform:uppercase;
     font-weight:400;
 }
-
 
 /* Base Stat Total Colors */
 #hp {
@@ -211,6 +209,19 @@ body {
     border-color: var(--primary);
     border: none;
     background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(255,255,255,1.0)'/></svg>");
+}
+
+/* About page */
+.about {
+    height:100%;
+    text-align:center;
+    padding:10px;
+}
+
+.faq {
+    height:100%;
+    text-align:center;
+    padding:10px;
 }
 
 /* Dark Mode */

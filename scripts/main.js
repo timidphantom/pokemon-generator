@@ -48,3 +48,5 @@ async function loadPkmn(query) { //query parameter searches a pokemon
         error.handleError();
     
 }}
+
+// dark mode
