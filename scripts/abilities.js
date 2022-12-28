@@ -1,3 +1,5 @@
+// Class which handles outputting of the randomized Pokemon's abilities. 
+
 const abilityOne = $("#ability-1");
 const abilityTwo = $("#ability-2");
 const hiddenAbility = $("#hidden-ability");

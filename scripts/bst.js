@@ -1,3 +1,5 @@
+// Class which handles Pokemon's base stat totals and outputs the results into the bootstrap progress bars on the webpage.
+
 const hp = $("#hp")
 const attack = $("#attack")
 const defense = $("#defense")

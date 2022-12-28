@@ -1,3 +1,5 @@
+// file has functions which handle the dark mode implementation on the website
+
 const darkModeSwitch = $("#dark-mode-switch")
 
 function darkModeToggle(){

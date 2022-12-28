@@ -1,3 +1,5 @@
+//class which handles not only Pokemon type, but also their name and the image which displays when searched/randomized.
+
 const mainType = $("#type-1");
 const secondaryType = $("#type-2");
 const image = $("#pkmn-image");

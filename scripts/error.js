@@ -1,3 +1,5 @@
+// class contains error handling and is implemented in the try/catch in main.js
+
 const abilityOne = $("#ability-1");
 const abilityTwo = $("#ability-2");
 const hiddenAbility = $("#hidden-ability");

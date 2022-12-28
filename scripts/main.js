@@ -1,3 +1,4 @@
+// main file which is linked on the HTML page, all other classes are imported here.
 
 import {BaseStatTotal} from './bst.js'; //class containing information on each Pokemon's base stats (i.e. their strengths and weaknesses)
 import {Abilities} from './abilities.js'; //class containing information on each Pokemon's in-game abilities
@@ -8,7 +9,6 @@ import {Error} from './error.js'; // class containing how to handle errors, used
 const searchBtn = $("#search-button");
 const randomBtn = $("#random-button");
 const searchInput = $("#search-box");
-const darkModeSwitch = $("#dark-mode-switch");
 
 // Begins here
 function RNG() { //randomizer
