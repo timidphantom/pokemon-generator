@@ -6,11 +6,11 @@ import {Error} from './error.js'; // class containing how to handle errors, used
 
 // Declaring variables
 const searchBtn = $("#search-button");
-const randomBtn = $("#random-button")
+const randomBtn = $("#random-button");
 const searchInput = $("#search-box");
+const darkModeSwitch = $("#dark-mode-switch");
 
 // Begins here
-
 function RNG() { //randomizer
     return Math.floor(Math.random() * 905)        
 } 
@@ -31,7 +31,7 @@ async function loadPkmn(query) { //query parameter searches a pokemon
         const result = await fetch(`https://pokeapi.co/api/v2/pokemon/${query}`)
         const pkmn = await result.json(); 
 
-        // Declaring imported classes - I have to do it in this function so that I can pass in the pokemon itself
+        // Declaring imported classes - I have to do it in this function so that I can pass in the pokemon name/number into the parameter
         let bst = new BaseStatTotal(pkmn);
         let abilities = new Abilities(pkmn);
         let types = new Types(pkmn);
@@ -48,5 +48,3 @@ async function loadPkmn(query) { //query parameter searches a pokemon
         error.handleError();
     
 }}
-
-// dark mode

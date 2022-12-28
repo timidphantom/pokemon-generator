@@ -15,12 +15,37 @@
     --primary: #5c58d8;
     --secondary: #fff8c0;
     --white: #f4f2ee; 
-    --black: #2a2a32; 
+    --black: #2a2a32;
+
+    --dm-background: #26263b;
+    --dm-light: #4b4d5e;
+    --dm-middle: #3e4050;
+    --dm-dark: #e6dfca;
+    --dm-primary: #081127;
+    --dm-secondary: #e0e2e9;
 }
 
 body {
     color: var(--black);
-    font-family:'Poppins',sans-serif
+    font-family:'Poppins',sans-serif;
+}
+
+a {
+    color: var(--primary);
+}
+
+a:hover {
+    color: var(--primary);
+    opacity:0.6;
+}
+
+.dm-link {
+    color: var(--secondary);
+}
+
+.dm-link:hover {
+    color: var(--secondary);
+    opacity:0.6;
 }
 
 .body-bg {
@@ -66,6 +91,10 @@ body {
     color: var(--dark);
 }
 
+.white-text {
+    color: var(--white);
+}
+
 .wrapper {
     width:70vw;
     margin:auto;
@@ -76,16 +105,19 @@ body {
     display:grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
-    padding-bottom:50px;
     height:fit-content;
 }
 
 .name {
     text-align:center;
     border-radius:5px;
+    padding: 10px 20px;
+
+}
+
+.name span {
     font-weight:bold;
     font-size:1.5rem;
-    padding:10px;
 }
 
 .image {
@@ -155,11 +187,11 @@ body {
     font-size:1.5rem;
 }
 
-.abilities, .type-1, .type-2, #pkmn-name, #pokemon-name {
+.abilities, .type-1, .type-2, #pkmn-name, #pokemon-name, .abt-title {
     text-transform:capitalize;
 }
 
-#pkmn-name, .type-1, .type-2, .ability-title, .bst-title, .navbar-brand {
+#pkmn-name, .type-1, .type-2, .ability-title, .bst-title, .navbar-brand, .abt-title {
     font-family:"unbounded", sans-serif;
     text-transform:uppercase;
     font-weight:400;
@@ -216,15 +248,86 @@ body {
     height:100%;
     text-align:center;
     padding:10px;
+    border-radius:5px;
 }
 
 .faq {
     height:100%;
     text-align:center;
     padding:10px;
+    border-radius:5px;
+}
+
+/* Footer */
+.footer {
+    position:relative;
+    bottom:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    text-align:center;
+    padding:25px;
+}
+
+.disclaimer {
+    font-size:0.7rem;
+    opacity:0.8;
 }
 
 /* Dark Mode */
+.dark-body {
+    background-color: var(--dm-background) !important;
+}
+
+.dark-middle {
+    background-color: var(--dm-middle);
+    color:var(--white);
+}
+
+.dark-light {
+    background-color: var(--dm-light);
+    color:var(--white);
+}
+
+.dark-primary {
+    background-color: var(--dm-primary);
+    color:var(--white);
+}
+
+.dark-secondary {
+    background-color: var(--dm-secondary);
+    color:var(--white);
+}
+
+.dark-border-bottom {
+    border-bottom: 1px solid var(--black);
+}
+
+.opacity {
+    opacity:0.7;
+}
+
+.opacity:hover {
+    opacity: 1;
+    color:#F8F9FA
+}
+
+.active-link { 
+    opacity:1;
+}
+
+.dm-text {
+    color: var(--dm-secondary);
+}
+
+.dm-border {
+    border: var(--dark) 1px solid;
+}
+
+.hover-light:hover {
+    color: var(--white);
+}
 
 /* Media queries */
 @media (max-width:769px){
