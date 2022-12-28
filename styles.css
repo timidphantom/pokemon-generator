@@ -25,8 +25,14 @@
     --dm-secondary: #e0e2e9;
 }
 
+html { /*for sticky footer*/
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     color: var(--black);
+    margin: 0 0 175px; /* bottom = footer height */
     font-family:'Poppins',sans-serif;
 }
 
@@ -260,8 +266,11 @@ a:hover {
 
 /* Footer */
 .footer {
-    position:relative;
-    bottom:0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 150px;
+    width: 100%;
     display:flex;
     align-items:center;
     justify-content:center;

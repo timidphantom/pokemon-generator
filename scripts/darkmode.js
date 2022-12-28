@@ -10,8 +10,8 @@ function darkModeToggle(){
     $("nav > a, nav > div > ul > li > a").toggleClass("white-text")
     $("nav > div > ul > li > a").toggleClass("opacity")
     $("a.active").toggleClass("text-light active-link") // bootstrap overwrites my CSS for.. some reason, so I need to put in this toggle to make the active links white on dark mode
-    $("button.primary-bg").toggleClass("dark-primary")
-    $("button.secondary-bg").toggleClass("dark-secondary text-dark hover-light")
+    $("button.primary-bg, a.primary-bg").toggleClass("dark-primary")
+    $("button.secondary-bg, a.secondary-bg").toggleClass("dark-secondary text-dark hover-light")
     $("input.form-control").toggleClass("dark-light border-dark")
     $(".dark-color").toggleClass("dm-text")
     $(".abilities").toggleClass("dm-border")
