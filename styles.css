@@ -40,17 +40,8 @@ a {
     color: var(--primary);
 }
 
-a:hover {
+nav ul li a:hover {
     color: var(--primary);
-    opacity:0.6;
-}
-
-.dm-link {
-    color: var(--secondary);
-}
-
-.dm-link:hover {
-    color: var(--secondary);
     opacity:0.6;
 }
 
@@ -112,6 +103,15 @@ a:hover {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     height:fit-content;
+}
+
+.primary-btn:hover{
+    background-color: #221f72;
+    color: var(--white);
+}
+
+.secondary-btn:hover {
+    background-color:#ecdd6d;
 }
 
 .name {
@@ -264,6 +264,11 @@ a:hover {
     border-radius:5px;
 }
 
+.link-btn {
+    width:25%;
+}
+
+
 /* Footer */
 .footer {
     position: absolute;
@@ -313,6 +318,34 @@ a:hover {
     border-bottom: 1px solid var(--black);
 }
 
+.dm-link {
+    color: var(--secondary);
+}
+
+.dm-link:hover {
+    color: var(--secondary);
+    opacity:0.6;
+}
+
+.dm-primary-btn {
+    color: var(--dm-secondary);
+}
+
+.dm-primary-btn:hover{
+    background-color: var(--dm-secondary);
+    color: var(--dm-primary);
+    opacity:1;
+}
+
+.dm-secondary-btn{
+    color:var(--dm-primary)
+}
+
+.dm-secondary-btn:hover {
+    background-color:var(--dm-primary);
+    color: var(--dm-secondary);
+}
+
 .opacity {
     opacity:0.7;
 }
@@ -340,12 +373,20 @@ a:hover {
 
 /* Media queries */
 @media (max-width:769px){
+
+    body {
+        margin: 0 0 225px; /* bottom = footer height */
+    }
     .wrapper {
         width: 90vw;
     }
 
-    .abilities, #search-button, #random-button {
-        font-size:0.9rem;
+    .abilities {
+        font-size:0.8rem;
+    }
+
+    #search-button, #random-button, .progress-bar {
+        font-size:0.6rem;
     }
 
     .image img {
@@ -355,16 +396,31 @@ a:hover {
     }
 
     .image {
-        height:85%; 
+        height:80%; 
     }
 
     .typing {
-        height:15%;
+        height:20%;
         padding-top:20px;
     }
 
     .type-1, .type-2 {
         font-size: 1rem;
     }
+
+    .link-btn {
+        width:100%;
+    }
+
+    .footer p {
+        font-size:0.7rem;
+    }
+    .disclaimer {
+        font-size:0.6rem;
+    }
+    .footer {
+        height:200px;
+    }
+
 
 }
